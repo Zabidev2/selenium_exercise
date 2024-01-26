@@ -17,8 +17,8 @@ button = driver.find_element(By.ID, "nav-login")
 button.click()
 
 
-username = driver.find_element(By.ID, "emailaddress").send_keys("zabih9224@gmail.com")
-password = driver.find_element(By.NAME, "password").send_keys("Zabi12345")
+username = driver.find_element(By.ID, "emailaddress").send_keys("email")
+password = driver.find_element(By.NAME, "password").send_keys("password")
 login_button = driver.find_element(By.ID, "login-button").click()
 
 WebDriverWait(driver, 10).until(
